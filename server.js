@@ -38,8 +38,16 @@ app.set('views', './views')
 // Maak een GET route voor de index (meestal doe je dit in de root, als /)
 app.get('/', async function (request, response) {
    // Render index.liquid uit de Views map
+   const fakeData = [
+    {
+      title: 'hoi'
+    },
+    {
+      title: 'hey'
+    }
+   ]
    // Geef hier eventueel data aan mee
-   response.render('index.liquid')
+   response.render('index.liquid', {data: fakeData})
 })
 
 // Maak een POST route voor de index; hiermee kun je bijvoorbeeld formulieren afvangen

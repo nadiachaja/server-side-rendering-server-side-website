@@ -1,6 +1,8 @@
 {% render 'partials/head.liquid' %}
 
 
-
+{% for item in data %}
+    {% include 'partials/card.liquid' with item %} 
+{% endfor %}
 
 {% render 'partials/footer.liquid' %}
