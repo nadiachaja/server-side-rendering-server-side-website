@@ -1,0 +1,10 @@
+{% render 'partials/head.liquid' %}
+
+<body>
+    {% for item in items %}
+        {% include 'partials/card.liquid' with item %}
+    {% endfor %}
+</body>
+
+
+{% render 'partials/footer.liquid' %}
