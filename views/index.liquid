@@ -2,13 +2,6 @@
 
 <body>
     <main>
-        <img class="logo-mobile" src="/assets/logomobiel.svg" alt="logo">
-        <img class="logo-desktop" src="/assets/logodesktop.svg" alt="logo">
-
-        <h2>Finding and sharing gifts ideas</h2>
-
-        <h1>I'm looking for a gift for...</h1>
-
         <select name="person" id="person">
             <option value="">Who is him/her/other</option>
             <option value="boyfriend">Boyfriend</option>
@@ -79,7 +72,13 @@
             <option value="first_day_work">First Day at Work</option>
         </select>
 
-        <label for=""></label>
+        <label for="search">I'm looking for a gift for...</label>
+        <input type="search" id="site-search" name="search" />
+
+        <button><img src="/assets/search.svg" alt="search"></button>
+
+        <img src="/assets/spotters.svg" alt="spotters"> 
+        <p>Join our community of spotters</p>
 
         {% for item in items %}
         {% include 'partials/card.liquid' with item %}
