@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--bg-general);
+}
+
+header{
+    display: flex;
+    margin: 1em;
+    justify-content: space-between;
+}
+
+.branding{
+    display: flex;
+}
+
+.logo-mobile-img{
+    width: 4.5em;
+    height: 4.5em;
+}
+
+.logo-desktop-img{
+    display: none;
+}
+
+.logo-tagline{
+    display: none;
+}
+
+.user-actions{
+    display: flex;
+    gap: 1em;
+}
+
+.your-list{
+    background-color: var(--bg-secondary);
+    padding: 1em;
+    border-radius: var(--border-radius-xxxl);
+    display: flex;
+    height: fit-content;
+}
+
+.favourite-list-img{
+    height: fit-content;
+}
+
+.create-list{
+    display: none;
+}
+
+.profile-btn{
+    background-color: var(--bg-secondary);
+    padding: 1em;
+    border-radius: var(--border-radius-xxxl);
+    display: flex;
+    height: fit-content;
+}
