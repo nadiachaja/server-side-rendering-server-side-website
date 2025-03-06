@@ -1,7 +1,9 @@
 {% render 'partials/head.liquid' %}
 
 <body>
-    <main>
+    <main class="general">
+        <h1>I'm looking for a gift for...</h1>
+
         <select name="person" id="person">
             <option value="">Who is him/her/other</option>
             <option value="boyfriend">Boyfriend</option>
@@ -40,7 +42,7 @@
 
         <input type="number" id="age" name="age" min="0" max="120" placeholder="age">
 
-        <select name="occasion">
+        <select name="occasion" id="occasion">
             <option value="">For which occasion</option>
             <option value="birthday">Birthday</option>
             <option value="anniversary">Anniversary</option>
@@ -72,17 +74,19 @@
             <option value="first_day_work">First Day at Work</option>
         </select>
 
-        <label for="search">I'm looking for a gift for...</label>
-        <input type="search" id="site-search" name="search" />
+        <label class="text-chat" for="search">I'm looking for a gift for...</label>
+        <input type="chat" id="chat" name="chat" />
 
-        <button><img src="/assets/search.svg" alt="search"></button>
+        <button class="to-chat"><img class="search" src="/assets/search.svg" alt="search"></button>
 
-        <img src="/assets/spotters.svg" alt="spotters"> 
-        <p>Join our community of spotters</p>
+        <img class="spotters-invite" src="/assets/spotters.svg" alt="spotters"> 
+        <p class="text-join-spotters">Join our community of spotters</p>
 
+        <div class="products-home">
         {% for item in items %}
         {% include 'partials/card.liquid' with item %}
         {% endfor %}
+        </div>
     </main>
 </body>
 

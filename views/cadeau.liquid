@@ -1,9 +1,58 @@
 {% render 'partials/head.liquid' %}
 
 <body>
-    {% for item in items %}
-        {% include 'partials/card.liquid' with item %}
-    {% endfor %}
+    <main class="product">
+        <img class="item-product" src="{{ item.image }}" alt="{{ item.name }}">
+
+        <h2 class="titel-product">{{ item.name }}</h2>
+        <button class="to-favourite">Add to <img class="image-favourite" src="/assets/favourite.svg" alt="favourite"></button>
+        <img class="spotters-item" src="/assets/persoons.svg" alt="spotters">
+        <p class="item-saved">+30 saved</p>
+        <img class="item cadeau" src="/assets/cadeau.svg" alt="cadeau">
+        <p class="item-gived">+4 gived</p>
+
+        <div class="description">
+            <p>{{ item.description }}</p>
+
+            <img class="" src="/assets/vierkantvraag.svg" alt="">
+            <p>WHY THIS GIFT The glue is non-toxic, so it's safe to eat or drink off repaired items. To retain the gold
+                colour it is not advised to place items in the dishwasher.</p>
+
+            <img src="/assets/hand.svg" alt="">
+            <p>GOOD TO KNOW One kit can repair approximately eight normal plates as per the images, with 3 full cracks.
+            </p>
+
+            <img src="/assets/smile.svg" alt="">
+            <p>wooow surprise factor</p>
+
+            <img src="/assets/vierkantgoed.svg" alt="">
+            <p>doom to be trashed</p>
+
+            <img src="/assets/vierkantbest.svg" alt="">
+            <p>new</p>
+
+            <h3>Where to buy</h3>
+            <article>
+                <a class="slug" href="/cadeau/{{ item.slug }}">
+                
+                <img class="product-image" src="{{ item.image }}" width="150" height="130" alt="">
+                <button><img src="/assets/shoppingcart.svg" alt="shooping cart"></button>
+                <h4>Shop</h4></a>
+                <p>€19,99</p>
+                <p>Action</p>
+
+            </article>
+
+
+
+            <h3>You may also like</h3>
+            <article class="products-detail">
+                {% for item in items %}
+                {% include 'partials/card.liquid' with item %}
+                {% endfor %}
+            </article>
+        </div>
+    </main>
 </body>
 
 

@@ -67,18 +67,3 @@ app.listen(app.get('port'), function () {
   // Toon een bericht in de console en geef het poortnummer door
   console.log(`Application started on http://localhost:${app.get('port')}`)
 })
-
-
-
-
-
-
-//voorbeeld vorige sprint 
-// app.get('/', async function (request, response) {
-//   const personResponse = await fetch('https://fdnd.directus.app/items/person/?fields=name,fav_country&filter[fav_country][_neq]=null')
-//   const personResponseJSON = await personResponse.json()
-//   personResponseJSON.data.map(function(person){
-//     person.fav_country_for_map = countries[person.fav_country] 
-//   })
-//   response.render('index.liquid', {persons: personResponseJSON.data, squads: squadResponseJSON.data})
-// })
