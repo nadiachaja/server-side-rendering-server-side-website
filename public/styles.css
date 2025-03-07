@@ -8,6 +8,9 @@ body{
     background-color: var(--bg-general);
 }
 
+
+/*HEAD*/
+
 header{
     display: flex;
     margin: 1em;
@@ -59,3 +62,30 @@ header{
     display: flex;
     height: fit-content;
 }
+
+.products-home{
+    display: flex;
+    flex-direction: column;
+    margin: 3em;
+}
+
+
+
+/*CARDS*/
+
+.card{
+    background-color: var(--bg-secondary);
+    margin: 1em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.saved-spotters-img{
+    width: 3.5em;
+}
+
+.gived-cadeau-img{
+    width: 2em;
+}
+
