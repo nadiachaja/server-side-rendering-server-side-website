@@ -1,56 +1,69 @@
-{% render 'partials/head.liquid' %}
+{% render 'partials/head.liquid', title: item.name %}
 
-    <main class="product">
-        <img class="item-product-img" src="{{ item.image }}" alt="{{ item.name }}">
+<main class="product">
 
-        <a class="go-back" href=""><img class="back-img" src="/assets/back.svg" alt="back">Back</a>
-        
+    <a class="go-back" href=""><img class="back-img" src="/assets/back.svg" alt="back">Back</a>
 
-        <h2 class="titel-product">{{ item.name }}</h2>
+    <img class="item-product-img" src="{{ item.image }}" alt="{{ item.name }}">
+
+    <section class="whapper-product">
+        <h1 class="titel-product">{{ item.name }}</h1>
         <button class="to-favourite-btn">Add to <img class="favourite-img" src="/assets/favourite.svg"
                 alt="favourite"></button>
-        <img class="spotters-item-img" src="/assets/persoons.svg" alt="spotters">
-        <p class="item-saved">+30 saved</p>
-        <img class="item-cadeau-img" src="/assets/cadeau.svg" alt="cadeau">
-        <p class="item-gived">+4 gived</p>
-
-        <div class="description">
-            <p>{{ item.description }}</p>
-
-            <img class="why-this-gift-img" src="/assets/vierkantvraag.svg" alt="">
-            <p class="why-this-gift">WHY THIS GIFT The glue is non-toxic, so it's safe to eat or drink off repaired
-                items. To retain the gold
-                colour it is not advised to place items in the dishwasher.</p>
-            <img class="good-to-now-img" src="/assets/hand.svg" alt="">
-            <p class="good-to-now">GOOD TO KNOW One kit can repair approximately eight normal plates as per the images,
-                with 3 full cracks.
-            </p>
-
-            <img class="smiles-img" src="/assets/smile.svg" alt="">
-            <p class="Smiley-text">wooow surprise factor</p>
-            <img class="gift-status-img" src="/assets/vierkantgoed.svg" alt="">
-            <p class="gift-status-trashed">doom to be trashed</p>
-            <img class="gift-status-img" src="/assets/vierkantbest.svg" alt="">
-            <p class="gift-status-new">new</p>
-
-            <h3 class="product-sidebar">Where to buy</h3>
-            <article class="shop-info">
-                <a class="to-the-shop" href="">
-                    <img class="product-img" src="{{ item.image }}" width="150" height="130" alt="">
-                    <button class="shopping-cart-btn"><img class="shopping-card" src="/assets/shoppingcart.svg" alt="shooping cart"></button>
-                    <h4 class="shop-name">Shop</h4>
-                </a>
-                <p class="price">€19,99</p>
-                <p class="the-shop">Action</p>
-            </article>
-
-            <h3 class="product-sidebar">You may also like</h3>
-            <article class="products-detail">
-                {% for item in items %}
-                {% include 'partials/card.liquid' with item %}
-                {% endfor %}
-            </article>
+        <div class="whapper-spotter-gived">
+            <img class="spotters-item-img" src="/assets/persoons.svg" alt="spotters">
+            <p class="item-saved">+30 saved</p>
+            <img class="item-cadeau-img" src="/assets/cadeau.svg" alt="cadeau">
+            <p class="item-gived">+4 gived</p>
         </div>
-    </main>
+    </section>
+
+    <div class="description">
+        <p>{{ item.description }}</p>
+
+        <div class="whapper-extra-info">
+            <div class="whapper-why">
+                <img class="why-this-gift-img" src="/assets/vierkantvraag.svg" alt="">
+                <p class="why-this-gift">WHY THIS GIFT The glue is non-toxic, so it's safe to eat or drink off repaired
+                    items. To retain the gold
+                    colour it is not advised to place items in the dishwasher.</p>
+            </div>
+            <div class="whapper-good">
+                <img class="good-to-now-img" src="/assets/hand.svg" alt="">
+                <p class="good-to-now">GOOD TO KNOW One kit can repair approximately eight normal plates as per the
+                    images,
+                    with 3 full cracks.
+                </p>
+            </div>
+        </div>
+
+        <img class="smiles-img" src="/assets/smile.svg" alt="">
+        <p class="Smiley-text">wooow surprise factor</p>
+        <img class="gift-status-img" src="/assets/vierkantgoed.svg" alt="">
+        <p class="gift-status-trashed">doom to be trashed</p>
+        <img class="gift-status-img" src="/assets/vierkantbest.svg" alt="">
+        <p class="gift-status-new">new</p>
+
+        
+        <h2 class="product-sidebar">Where to buy</h2>
+        <article class="shop-info">
+            <a class="to-the-shop" href="">
+                <img class="product-img" src="{{ item.image }}" width="150" height="130" alt="">
+                <button class="shopping-cart-btn"><img class="shopping-card" src="/assets/shoppingcart.svg"
+                        alt="shooping cart"></button>
+                <h3 class="shop-name">Shop</h3>
+            </a>
+            <p class="price">€19,99</p>
+            <p class="the-shop">Action</p>
+        </article>
+
+        <h2 class="product-sidebar">You may also like</h2>
+        <article class="products-detail">
+            {% for item in items %}
+            {% include 'partials/card.liquid' with item %}
+            {% endfor %}
+        </article>
+    </div>
+</main>
 
 {% render 'partials/footer.liquid' %}
