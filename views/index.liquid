@@ -4,7 +4,7 @@
 
 
     <section class="products-home">
-        <div class="register">
+        <div class="wrapper-register">
             <h1 class="text-register">Create a list for your best friend</h1>
             <img class="img-person-regsiter" src="/assets/register.svg" alt="">
             <img class="img-bloem-register" src="/assets/bloem.svg" alt="">
@@ -89,14 +89,27 @@
                 </select>
             </div>
 
-            <label class="text-chat" for="search">I'm looking for a gift for...</label>
-            <input type="chat" id="chat" name="chat" />
-        </fieldset>
+            {% comment %} <div class="wrapper-chat">
+                <div class="container-chat">
+                    <label class="text-chat" for="search">I'm looking for a gift for...</label>
+                    <div class="container-search">
+                        <input type="chat" id="chat" name="chat" />
+                        <button class="to-chat-btn"><img class="search" src="/assets/search.svg" alt="search"></button>
+                    </div>
+                </div>
+            </div> {% endcomment %}
 
-        <button class="to-chat-btn"><img class="search" src="/assets/search.svg" alt="search"></button>
+            <div class="wrapper-chat">
+                <div class="container-search">
+                <label class="text-chat" for="search">I'm looking for a gift for...</label>
+                <input type="chat" id="chat" name="chat" />
+                <button class="to-chat-btn"><img class="search" src="/assets/search.svg" alt="search"></button>
+            </div>
+            </div>
+        </fieldset>
     </form>
 
-    <section>
+    <section class="wrapper-spotters-join">
         <h2>Join our community of spotters</h2>
         <img class="spotters-invite-img" src="/assets/spotters.svg" alt="spotters">
     </section>

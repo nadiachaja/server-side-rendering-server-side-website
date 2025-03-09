@@ -67,8 +67,31 @@ header{
 .products-home{
     display: flex;
     flex-direction: column;
+    justify-self: center;
     margin: 3em;
 }
+
+
+/*VOLGORDE HTML HOMEPAGINA*/
+
+main.general {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10em;
+}
+
+section.products-home {
+    order: 2; 
+}
+
+form.filter-chat {
+    order: 1; 
+}
+
+section.wrapper-spotters-join {
+    order: 3; 
+}
+
 
 
 /*FILTER HOMEPAGINA*/
@@ -80,7 +103,7 @@ fieldset{
 legend{
     margin: .5em;
     font-size: 38px;
-    padding-top: 5em;
+    padding-top: 3em;
 }
 
 .wrapper-filter{
@@ -97,6 +120,8 @@ legend{
     font-size: var(--xs-paragraph);
     line-height: var(--line-height-m);
     width: 15em;
+    border: 1px solid var(--bg-register);
+    color: var(--bg-register);
 }
 
 #age{
@@ -105,6 +130,8 @@ legend{
     font-size: var(--xs-paragraph);
     line-height: var(--line-height-m);
     width: 4em;
+    border: 1px solid var(--bg-register);
+    color: var(--bg-register);
 }
 
 #occasion{
@@ -113,6 +140,64 @@ legend{
     font-size: var(--xs-paragraph);
     line-height: var(--line-height-m);
     width: 15em;
+    border: 1px solid var(--bg-register);
+    color: var(--bg-register);
+}
+
+.wrapper-spotters-join{
+    display: none;
+}
+
+
+
+/*CHAT*/
+
+.wrapper-chat{
+    background-color: var(--bg-secondary);
+    padding-left: 3em;
+    padding-right: 3em;
+    padding-top: 2em;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    border-radius: var(--border-radius-l) var(--border-radius-l) 0px 0px;
+    z-index: 10;
+}
+
+#chat{
+    padding: 1.5em;
+    width: 100%;
+    border-radius: var(--border-radius-l);
+    margin-top: 1em;
+    border: 1px solid var(--bg-register);
+    background-position: 1em;
+    background-repeat: no-repeat;
+    background-image: url(/assets/microfoon.svg);
+    padding-left: 3em;
+    padding-right: 4em;
+    font-size: var(--xs-paragraph);
+}
+
+/* label>input{
+    background-position: .5em;
+    background-repeat: no-repeat;
+    background-image: url(/assets/microfoon.svg);
+} */
+
+.to-chat-btn{
+    background-color: var(--bg-button);
+    border-radius: var(--border-radius-xxxl);
+    padding: .7em;
+    position: relative;
+    bottom: 4.2em;
+    right: .7em;
+    display: flex;
+    justify-self: end;
+}
+
+.text-chat{
+    font-size: var(--xs-paragraph);
+    color: var(--bg-register);
 }
 
 
@@ -123,6 +208,7 @@ legend{
     background-color: var(--bg-secondary);
     margin: 1em;
     height: 20em;
+    width: 15em;
 }
 
 .saved-spotters-img{
@@ -190,15 +276,15 @@ legend{
 }
 
 
-
 /*REGISTER OR LOG IN*/
 
-.register{
+.wrapper-register{
     background-color: var(--bg-register);
     display: flex;
     flex-direction: column;
     margin: 1em;
     height: 20em;
+    width: 15em;
     border-radius: var(--border-radius-m);
     padding: 1em;
 }
