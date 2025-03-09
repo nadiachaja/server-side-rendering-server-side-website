@@ -37,6 +37,7 @@ header{
 .user-actions{
     display: flex;
     gap: 1em;
+    align-items: end;
 }
 
 .your-list{
@@ -70,15 +71,58 @@ header{
 }
 
 
+/*FILTER HOMEPAGINA*/
+
+fieldset{
+    border: none;
+}
+
+legend{
+    margin: .5em;
+    font-size: 38px;
+    padding-top: 5em;
+}
+
+.wrapper-filter{
+    display: grid;
+    grid-template-columns: 70% 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1em;
+    padding: 1em;
+}
+
+#person{
+    padding: .5em;
+    border-radius: var(--border-radius-xxxs);
+    font-size: var(--xs-paragraph);
+    line-height: var(--line-height-m);
+    width: 15em;
+}
+
+#age{
+    padding: .5em;
+    border-radius: var(--border-radius-xxxs);
+    font-size: var(--xs-paragraph);
+    line-height: var(--line-height-m);
+    width: 4em;
+}
+
+#occasion{
+    padding: .5em;
+    border-radius: var(--border-radius-xxxs);
+    font-size: var(--xs-paragraph);
+    line-height: var(--line-height-m);
+    width: 15em;
+}
+
+
 
 /*CARDS*/
 
 .card{
     background-color: var(--bg-secondary);
     margin: 1em;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    height: 20em;
 }
 
 .saved-spotters-img{
@@ -89,3 +133,101 @@ header{
     width: 2em;
 }
 
+.whapper-spotter-gived-info{
+    display: flex;
+    gap: 1em;
+    position: relative;
+    top: 2em;
+    align-items: center;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.spotter-info {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: .2em;
+}
+
+.wrapper-img{
+    height: 12em;
+}
+
+.product-img{
+    height: 11em;
+    width: 14em;
+    display: flex;
+    justify-self: center;
+    margin: .5em;
+}
+
+.save-favourite-btn{
+    display: flex;
+    justify-self: end;
+    translate: -1em -13.5em;
+    border-radius: var(--border-radius-xxxl);
+    background-color: var(--bg-secondary);
+    width: 4em;
+    height: 4em;
+}
+
+.image-to-favourite{
+    height: 2.5em;
+    position: absolute;
+    left: .9em;
+    top: .7em;
+}
+
+.slug {
+    display: flex;
+    justify-content: center;
+    text-align: center; 
+    margin-left: 1em;
+    margin-right: 1em;
+    text-decoration: none;
+    color: var(--bg-button);
+}
+
+
+
+/*REGISTER OR LOG IN*/
+
+.register{
+    background-color: var(--bg-register);
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+    height: 20em;
+    border-radius: var(--border-radius-m);
+    padding: 1em;
+}
+
+.text-register{
+    color: var(--text-secondary);
+    margin-bottom: 1em;
+}
+
+.img-person-regsiter{
+    width: 5.5em;
+    position: relative;
+    left: 5em;
+    z-index: 1;
+}
+
+.img-bloem-register{
+    width: 4.5em;
+    position: relative;
+    left: 1.5em;
+    bottom: 3em;
+}
+
+.register-btn{
+    background-color: var(--bg-button);
+    color: var(--text-secondary);
+    padding: 1em;
+    border-radius: var(--border-radius-l);
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}

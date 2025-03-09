@@ -44,6 +44,7 @@ body {
     --bg-secondary: #ffffff; 
     --bg-chat-closed: #F6F5F5;
     --bg-filters-not-choose: #A9ABAD;
+    --bg-register:#868686;
     --bg-filters-choose: #101010;
     --bg-chat-speechbubble: #000000;
     --bg-button: #000000;
@@ -57,6 +58,7 @@ body {
     --text-suggestions-chat: #F6F5F5;
     --text-general: #000000;
     --text-share: #616161;
+    --text-secondary:#ffffff;
 
 
     /* FONT-SIZE */
