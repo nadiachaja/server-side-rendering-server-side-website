@@ -2,19 +2,20 @@
 
 <main class="product">
 
-    <a class="go-back" href=""><img class="back-img" src="/assets/back.svg" alt="back">Back</a>
+    <a class="go-back" href="/"><img class="back-img" src="/assets/back.svg" alt="back">Back</a>
 
-    <img class="item-product-img" src="{{ item.image }}" alt="{{ item.name }}">
-
-    <section class="whapper-product">
         <h1 class="titel-product">{{ item.name }}</h1>
-        <button class="to-favourite-btn">Add to <img class="favourite-img" src="/assets/favourite.svg"
-                alt="favourite"></button>
+        <div class="wrapper-extra-product-info">
             <img class="spotters-item-img" src="/assets/persoons.svg" alt="spotters">
             <p class="item-saved">+30 saved</p>
             <img class="item-cadeau-img" src="/assets/cadeau.svg" alt="cadeau">
             <p class="item-gived">+4 gived</p>
-    </section>
+            </div>
+
+    <img class="item-product-img" src="{{ item.image }}" alt="{{ item.name }}">
+
+    <button class="to-favourite-btn">Add to <img class="favourite-img" src="/assets/favourite2.svg"
+    alt="favourite"></button>
 
     <div class="description">
         <p>{{ item.description }}</p>

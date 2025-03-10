@@ -36,8 +36,9 @@ body {
 
 /* COLOR */
 :root {
-    --bg-general: #EDEDED;
+    --bg-general: #f6f5f5;
     --bg-secondary: #ffffff;
+    --bg-tertiary:#EDEDED;
     --bg-chat-closed: #F6F5F5;
     --bg-filters-not-choose: #A9ABAD;
     --bg-register: #868686;
