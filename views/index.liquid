@@ -4,15 +4,17 @@
 
 
     <section class="products-home">
+
+        {% for item in items %}
+        {% if forloop.index == 2 %}
         <div class="wrapper-register">
             <h1 class="text-register">Create a list for your best friend</h1>
             <img class="img-person-regsiter" src="/assets/register.svg" alt="">
             <img class="img-bloem-register" src="/assets/bloem.svg" alt="">
             <a class="register-btn" href="#">Register or log in</a>
         </div>
-
-        {% for item in items %}
-        {% include 'partials/card.liquid' with item %}
+        {% endif %}
+        {% include 'partials/card.liquid' with item, size: 'large' %}
         {% endfor %}
     </section>
 
@@ -89,30 +91,26 @@
                 </select>
             </div>
 
-            {% comment %} <div class="wrapper-chat">
-                <div class="container-chat">
+            <div class="wrapper-chat">
+                <div class="container-search">
                     <label class="text-chat" for="search">I'm looking for a gift for...</label>
-                    <div class="container-search">
+                    <div class="chat-input">
                         <input type="chat" id="chat" name="chat" />
                         <button class="to-chat-btn"><img class="search" src="/assets/search.svg" alt="search"></button>
                     </div>
                 </div>
-            </div> {% endcomment %}
-
-            <div class="wrapper-chat">
-                <div class="container-search">
-                <label class="text-chat" for="search">I'm looking for a gift for...</label>
-                <input type="chat" id="chat" name="chat" />
-                <button class="to-chat-btn"><img class="search" src="/assets/search.svg" alt="search"></button>
-            </div>
+                <div class="wrapper-spotters-join">
+                    <img class="spotters-invite-img" src="/assets/spotters.svg" alt="spotters">
+                    <h2>Join our community of spotters</h2>
+                </div>
             </div>
         </fieldset>
     </form>
 
-    <section class="wrapper-spotters-join">
-        <h2>Join our community of spotters</h2>
+    {% comment %} <section class="wrapper-spotters-join">
         <img class="spotters-invite-img" src="/assets/spotters.svg" alt="spotters">
-    </section>
+        <h2>Join our community of spotters</h2>
+    </section> {% endcomment %}
 
 
 </main>

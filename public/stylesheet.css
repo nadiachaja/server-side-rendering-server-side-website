@@ -1,50 +1,46 @@
+@font-face {
+    font-family: 'Parkinsans';
+    src: url('/font/Parkinsans-Regular.ttf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Parkinsans';
+    src: url('/font/Parkinsans-Bold.ttf');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Parkinsans';
+    src: url('/font/Parkinsans-ExtraBold.ttf');
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: 'Parkinsans';
+    src: url('/font/Parkinsans-Light.ttf');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Parkinsans';
+    src: url('/font/Parkinsans-Medium.ttf');
+    font-weight: 500;
+}
+
 body {
+    font-family: 'Parkinsans', sans-serif;
+}
 
 
-    @font-face {
-        font-family: 'Parkinsans';
-        src: url('/font/parkinsans-regular.ttf');
-        font-weight: normal;
-      }
-      
-      @font-face {
-        font-family: 'Parkinsans';
-        src: url('/font/parkinsans-bold.ttf');
-        font-weight: bold;
-      }
 
-      @font-face {
-        font-family: 'Parkinsans';
-        src: url('/font/parkinsans-extrabold.ttf');
-        font-weight: 800; 
-      }
-
-      @font-face {
-        font-family: 'Parkinsans';
-        src: url('/font/parkinsans-light.ttf');
-        font-weight: 300;
-      }
- 
-      @font-face {
-        font-family: 'Parkinsans';
-        src: url('/font/parkinsans-medium.ttf');
-        font-weight: 500; /
-      }
-   
-      @font-face {
-        font-family: 'Parkinsans';
-        src: url('/font/parkinsans-semibold.ttf');
-        font-weight: 600; 
-      }
-
-
-    /* COLOR */
-
+/* COLOR */
+:root {
     --bg-general: #EDEDED;
-    --bg-secondary: #ffffff; 
+    --bg-secondary: #ffffff;
     --bg-chat-closed: #F6F5F5;
     --bg-filters-not-choose: #A9ABAD;
-    --bg-register:#868686;
+    --bg-register: #868686;
     --bg-filters-choose: #101010;
     --bg-chat-speechbubble: #000000;
     --bg-button: #000000;
@@ -58,7 +54,7 @@ body {
     --text-suggestions-chat: #F6F5F5;
     --text-general: #000000;
     --text-share: #616161;
-    --text-secondary:#ffffff;
+    --text-secondary: #ffffff;
 
 
     /* FONT-SIZE */
@@ -79,6 +75,7 @@ body {
     --l-detail-heading: 24px;
     --m-detail-heading: 23px;
     --s-detail-heading: 20px;
+    --xs-detail-heading:16px;
 
     /*H4*/
     --m-info-title: 16px;
@@ -95,29 +92,34 @@ body {
     --xxs-paragraph: 15px;
     --xxxs-paragraph: 14px;
 
+    /*FONT-WEIGHT*/
+    --font-weight-light: 300;
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 600;
+    --font-weight-extra-bold: 800;
+
 
     /*LINE-HEIGHT*/
-
     --line-height-general: auto;
     --line-height-xxl: 1.7;
     --line-height-xl: 1.3;
     --line-height-l: 1.15;
-    --line-height-m:1.1;
-    --line-height-s:1.0;
-    --line-height-xs:0.9;
-    --line-height-xxs:0.6;
+    --line-height-m: 1.1;
+    --line-height-s: 1.0;
+    --line-height-xs: 0.9;
+    --line-height-xxs: 0.6;
 
     /*BORDER-RADIUS*/
-
-    --border-radius-xxxl:50%;
-    --border-radius-xxl:106px;
-    --border-radius-xl:52px;
-    --border-radius-l:30px;
-    --border-radius-m:20px;
-    --border-radius-s:17px;
-    --border-radius-xs:16px;
-    --border-radius-xxs:11px;
-    --border-radius-xxxs:8px;
+    --border-radius-xxxl: 50%;
+    --border-radius-xxl: 106px;
+    --border-radius-xl: 52px;
+    --border-radius-l: 30px;
+    --border-radius-m: 20px;
+    --border-radius-s: 17px;
+    --border-radius-xs: 16px;
+    --border-radius-xxs: 11px;
+    --border-radius-xxxs: 8px;
 
 
 
