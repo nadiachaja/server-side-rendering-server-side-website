@@ -193,7 +193,7 @@ legend {
     padding-top: 3em;
 
     @media screen and (min-width: 550px) {
-        padding-top: 0em;
+        padding-top: 1em;
     }
 
     @media screen and (min-width: 700px) {
@@ -373,9 +373,12 @@ legend {
     width: 15em;
 }
 
-/* .card.size-small {
-
-} */
+.card.size-small {
+    
+    .save-favourite-btn{
+        translate: -1.7em -15.2em;
+    }
+}
 
 .saved-spotters-img {
     width: 3.5em;
@@ -507,13 +510,6 @@ legend {
 
 /*DETAILPAGINA*/
 
-.products-detail{
-    width: 325px;
-    overflow-x: scroll;
-    white-space: nowrap;
-    display: flex;
-}
-
 .product{
     max-width: 100%; 
     width: 100vw; 
@@ -532,6 +528,7 @@ legend {
 .titel-product{
     font-size: var(--xxs-heading);
     font-weight: var(--font-weight-medium);
+    line-height: var(--line-height-s);
     margin-left: 1em;
 }
 
@@ -569,6 +566,8 @@ legend {
     background-color: var(--bg-button);
     color: var(--bg-secondary);
     font-size: var(--xs-paragraph);
+    font-weight: var(--font-weight-medium);
+    line-height: var(--line-height-general);
     border-radius: var(--border-radius-l);
     display: flex;
     gap: .5em;
@@ -576,4 +575,169 @@ legend {
     align-items: center;
     padding: .8em;
     margin: 1em;
+}
+
+.divider {
+    border-bottom: 2px solid var(--bg-filters-not-choose);
+    margin: 20px 0;
+    margin-bottom: 2em;
+}
+
+.description{
+    background-color: var(--bg-tertiary);
+    padding: 1em;
+    font-size: var(--s-paragraph);
+    line-height: var(--line-height-m);
+    font-weight: var(--font-weight-normal);
+}
+
+.product-description{
+    margin: 1em;
+    padding-bottom: 1em;
+    font-size: var(--xs-paragraph);
+    line-height: var(--line-height-m);
+    font-weight: var(--font-weight-normal);
+}
+
+.why-this-gift-img{
+    display: flex;
+    justify-self: center;
+    width: 2.5em;
+}
+
+.why-this-gift{
+    margin: 1em;
+    padding-bottom: 2em;
+    font-size: var(--xs-paragraph);
+    line-height: var(--line-height-m);
+    font-weight: var(--font-weight-normal);
+}
+
+.good-to-now-img{
+    display: flex;
+    justify-self: center;
+    width: 2.5em;
+}
+
+.good-to-now{
+    margin: 1em;
+    padding-bottom: 2em;
+    font-size: var(--xs-paragraph);
+    line-height: var(--line-height-m);
+    font-weight: var(--font-weight-normal);
+}
+
+.smiles-img{
+    display: flex;
+    justify-self: center;
+    margin: .5em;
+}
+
+.smiley-text{
+    display: flex;
+    justify-self: center;
+    padding-bottom: 1em;
+    font-size: var(--xs-paragraph);
+    line-height: var(--line-height-m);
+    font-weight: var(--font-weight-normal);
+}
+
+.gift-status-img{
+    display: flex;
+    justify-self: center;
+    margin: .5em;
+}
+
+.gift-status-trashed{
+    display: flex;
+    justify-self: center;
+    padding-bottom: 1em;
+    font-size: var(--xs-paragraph);
+    line-height: var(--line-height-m);
+    font-weight: var(--font-weight-normal);
+}
+
+.gift-status-new{
+    display: flex;
+    justify-self: center;
+    padding-bottom: 1em;
+    font-size: var(--xs-paragraph);
+    line-height: var(--line-height-m);
+    font-weight: var(--font-weight-normal);
+}
+
+.shop-info{
+    background-color: var(--bg-secondary);
+    width: 15em;
+    height: 20em;
+    margin: 1em;
+}
+
+.to-the-shop{
+    color: var(--text-general);
+    text-decoration: none;
+}
+
+.shopping-card-btn{
+    display: flex;
+    justify-self: center;
+    position: relative;
+    translate: 0em -10em;
+    background-color: var(--bg-secondary);
+    border-radius: var(--border-radius-xxxl);
+    width: 5em;
+    height: 5em;
+}
+
+.shopping-card{
+    margin: .5em;
+}
+
+.shop-name{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 3em;
+    font-size: var(--xs-detail-heading);
+    line-height: var(--line-height-xxl);
+    font-weight: var(--font-weight-medium);
+}
+
+.price{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 3em;
+    font-size: var(--xs-detail-heading);
+    line-height: var(--line-height-xxl);
+    font-weight: var(--font-weight-bold);
+}
+
+.wrapper-company{
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    position: relative;
+    bottom: 1em;
+}
+
+.product-sidebar{
+    font-size: var(--l-detail-heading);
+    font-weight: var(--font-weight-medium);
+    line-height: var(--line-height-general);
+    margin-left: 1em;
+    margin-top: 1em;
+}
+
+.products-detail{
+    width: 350px;
+    overflow-x: scroll;
+    display: flex;
+}
+
+.wrapper-shop{
+    width: 350px;
+    overflow-x: scroll;
+    white-space: nowrap;
+    display: flex;
 }
