@@ -515,10 +515,12 @@ legend {
 
 .go-back{
     display: flex;
+    align-items: center;
     gap: .5em;
     margin: 1em;
     color: var(--text-general);
     text-decoration: none;
+    font-size: var(--xs-paragraph);
 }
 
 .titel-product{
@@ -526,6 +528,10 @@ legend {
     font-weight: var(--font-weight-medium);
     line-height: var(--line-height-s);
     margin-left: 1em;
+
+    @media screen and (min-width:700px){
+        font-size: var( --xs-heading);
+    }
 }
 
 .wrapper-extra-product-info{
@@ -546,11 +552,13 @@ legend {
 .item-saved{
     display: flex;
     align-items: center;
+    font-size: var(--xs-paragraph);
 }
 
 .item-gived{
     display: flex;
     align-items: center;
+    font-size: var(--xs-paragraph);
 }
 
 .item-product-img{
@@ -571,6 +579,7 @@ legend {
     align-items: center;
     padding: .8em;
     margin: 1em;
+    margin-right: 2em;
     border:none;
     box-shadow: var(--box-shadow-s);
 }
@@ -592,9 +601,13 @@ legend {
 .product-description{
     margin: 1em;
     padding-bottom: 1em;
-    font-size: var(--xs-paragraph);
+    font-size: var(--s-paragraph);
     line-height: var(--line-height-m);
     font-weight: var(--font-weight-normal);
+
+    @media screen and (min-width:700px){
+        font-size: var(--ml-paragraph);
+    }
 }
 
 .why-this-gift-img{
@@ -609,6 +622,15 @@ legend {
     font-size: var(--xs-paragraph);
     line-height: var(--line-height-m);
     font-weight: var(--font-weight-normal);
+
+    @media screen and (min-width:550px){
+        display: flex;
+        text-align: center;
+    }
+
+    @media screen and (min-width:700px){
+        font-size: var(--s-paragraph);
+    }
 }
 
 .good-to-now-img{
@@ -623,6 +645,15 @@ legend {
     font-size: var(--xs-paragraph);
     line-height: var(--line-height-m);
     font-weight: var(--font-weight-normal);
+
+    @media screen and (min-width:550px){
+        display: flex;
+        text-align: center;
+    }
+
+    @media screen and (min-width:700px){
+        font-size: var(--s-paragraph);
+    }
 }
 
 .smiles-img{
@@ -638,6 +669,10 @@ legend {
     font-size: var(--xs-paragraph);
     line-height: var(--line-height-m);
     font-weight: var(--font-weight-normal);
+
+    @media screen and (min-width:700px){
+        font-size: var(--s-paragraph);
+    }
 }
 
 .gift-status-img{
@@ -653,6 +688,10 @@ legend {
     font-size: var(--xs-paragraph);
     line-height: var(--line-height-m);
     font-weight: var(--font-weight-normal);
+
+    @media screen and (min-width:700px){
+        font-size: var(--s-paragraph);
+    }
 }
 
 .gift-status-new{
@@ -662,6 +701,10 @@ legend {
     font-size: var(--xs-paragraph);
     line-height: var(--line-height-m);
     font-weight: var(--font-weight-normal);
+
+    @media screen and (min-width:700px){
+        font-size: var(--s-paragraph);
+    }
 }
 
 .shop-info{
@@ -732,6 +775,10 @@ legend {
     width: 350px;
     overflow-x: scroll;
     display: flex;
+
+    @media screen and (min-width:550px){
+        width: unset;
+    }
 }
 
 .wrapper-shop{
@@ -739,4 +786,10 @@ legend {
     overflow-x: scroll;
     white-space: nowrap;
     display: flex;
+    padding-bottom: 2em;
+
+    @media screen and (min-width:550px){
+        width: unset;
+    }
+
 }
