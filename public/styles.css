@@ -84,9 +84,10 @@ header {
     border-radius: var(--border-radius-xxxl);
     display: flex;
     height: fit-content;
+    border: 1px solid var(--bg-filters-not-choose);
+    box-shadow: var(--box-shadow-s);
 
     @media screen and (min-width:650px){
-        background-color: var(--bg-secondary);
         border-radius: var(--border-radius-l);
         text-decoration: none;
         gap: 1em;
@@ -116,6 +117,8 @@ header {
     border-radius: var(--border-radius-xxxl);
     display: flex;
     height: fit-content;
+    border: 1px solid var(--bg-filters-not-choose);
+    box-shadow: var(--box-shadow-s);
 }
 
 .products-home {
@@ -235,6 +238,7 @@ legend {
     width: 15em;
     border: 1px solid var(--bg-register);
     color: var(--bg-register);
+    box-shadow: var(--box-shadow-m);
 }
 
 #age {
@@ -245,6 +249,7 @@ legend {
     width: 4em;
     border: 1px solid var(--bg-register);
     color: var(--bg-register);
+    box-shadow: var(--box-shadow-m);
 }
 
 #occasion {
@@ -255,23 +260,11 @@ legend {
     width: 15em;
     border: 1px solid var(--bg-register);
     color: var(--bg-register);
+    box-shadow: var(--box-shadow-m);
 }
 
 .wrapper-spotters-join {
     display: none;
-    /* flex-wrap: wrap;
-    gap: 1rem; */
-    /* img {
-        width: 40%;
-    }
-    h2 {
-        width: 40%;
-        flex-grow: 1;
-    } */
-
-    /* @media screen and (min-width:550px){
-        display: flex;
-    } */
 }
 
 
@@ -336,6 +329,7 @@ legend {
     padding-left: 3em;
     padding-right: 4em;
     font-size: var(--xs-paragraph);
+    box-shadow: var(--box-shadow-m);
 }
 
 .to-chat-btn {
@@ -371,6 +365,7 @@ legend {
     margin: 1em;
     height: 20em;
     width: 15em;
+    box-shadow: var(--box-shadow-l);
 }
 
 .card.size-small {
@@ -471,6 +466,7 @@ legend {
     width: 15em;
     border-radius: var(--border-radius-m);
     padding: 1em;
+    box-shadow: var(--box-shadow-l);
 }
 
 .text-register {
@@ -575,6 +571,8 @@ legend {
     align-items: center;
     padding: .8em;
     margin: 1em;
+    border:none;
+    box-shadow: var(--box-shadow-s);
 }
 
 .divider {
@@ -671,6 +669,7 @@ legend {
     width: 15em;
     height: 20em;
     margin: 1em;
+    box-shadow: var(--box-shadow-l);
 }
 
 .to-the-shop{

@@ -122,6 +122,10 @@ body {
     --border-radius-xxs: 11px;
     --border-radius-xxxs: 8px;
 
+    /*BOX-SHADOW*/
+    --box-shadow-l: 0px 0px 10px 0px var(--bg-filters-not-choose);
+    --box-shadow-m: 2px 1px 5px 0px var(--bg-filters-not-choose);
+    --box-shadow-s: 0px 2px 3px -2px var(--bg-filters-not-choose);
 
 
 
