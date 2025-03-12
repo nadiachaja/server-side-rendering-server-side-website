@@ -47,7 +47,11 @@ app.get('/cadeau/:slug', async function (request, response) {
   // console.log(apiResponseJSON.data)
   
   // Geef hier eventueel data aan mee
-  response.render('cadeau.liquid', { item: apiResponseCadeauJSON.data[0], items: apiResponseJSON.data})
+  if(apiResponseCadeauJSON.data[0]){
+    response.render('cadeau.liquid', { item: apiResponseCadeauJSON.data[0], items: apiResponseJSON.data})
+  } else {
+    response.render('404.liquid');
+  }
 })
 
 // Maak een POST route voor de index; hiermee kun je bijvoorbeeld formulieren afvangen
