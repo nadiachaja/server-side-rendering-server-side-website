@@ -52,7 +52,6 @@ Zoekt een product op uit de database met een specifieke slug. De slug wordt ook 
 https://github.com/nadiachaja/server-side-rendering-server-side-website/blob/88c9acee52ff7812e44caf25c653fdb11dfb4465/server.js#L38-L43
 Wordt getoond in cadeau.liquid
 <br>
-<br>
 
 **Loop cadeau producten** <br>
 In de index.liquid
@@ -62,7 +61,6 @@ https://github.com/nadiachaja/server-side-rendering-server-side-website/blob/88c
 In de cadeau.liquid 
 Hier worden de cadeaus in geladen.
 https://github.com/nadiachaja/server-side-rendering-server-side-website/blob/88c9acee52ff7812e44caf25c653fdb11dfb4465/views/cadeau.liquid#L138-L140
-<br>
 <br>
 
 **Aparte size voor de loop cadeau producten** <br>
@@ -77,6 +75,7 @@ https://github.com/nadiachaja/server-side-rendering-server-side-website/blob/88c
 CSS <br>
 De class card is de large en de small heb ik apart neergezet.
 https://github.com/nadiachaja/server-side-rendering-server-side-website/blob/88c9acee52ff7812e44caf25c653fdb11dfb4465/public/styles.css#L364-L377
+<br>
 
 **404 pagina** <br>
 Ik heb een 404 pagina als de pagina niet gevonden is.
