@@ -18,6 +18,8 @@ Milliedoni is een bedrijf waar je cadeaus op de website kan zoeken met behulp va
 Ik heb een overzichtpagina en een detailapagina gemaakt en heb verschillende data opgehaald. Ik heb het figma design aangehouden wat we tijdens de briefing hadden gekregen. 
 [Figma bestand ]([url](https://www.figma.com/design/iSlNaEtdQrLDkBoUJpikUh/Untitled?node-id=0-1&p=f&t=zax0UBdNOr0g0Dwh-0)) Ik heb het gekopieerd en in een eigen bestand gezet, zodat ik niet per ongelijk iets aanpas. 
 
+Ik heb met het design een interface [inventory gemaakt](https://www.figma.com/design/iSlNaEtdQrLDkBoUJpikUh/Untitled?node-id=7-23189&p=f&t=zax0UBdNOr0g0Dwh-0). Ik heb daarvan [custom properties](https://github.com/nadiachaja/server-side-rendering-server-side-website/blob/main/public/stylesheet.css) voor alles gemaakt. Ik heb het eerste woord waarvoor het is en het tweede waar in de rij die zit of waavoor die verder bedoelt is. Ik heb dde font ingeladen en in een @font-face gezet.  
+
 De homepagina bestaat uit een header die overal terug komt. Daarnaast heeft de homepagina een chat en alle cadeaus. Door te chatten in de chat filter je door de cadeaus. Je kan cadeaus opslaan in een lijst. Als je op een cadeau klikt ga je naar de detailpagina waar je meer informatie krijgt over het cadeau. Ook kan je zien waar je het cadeau kan kopen en wat je misschien ook interessant vind. 
 
 <video src="https://github.com/user-attachments/assets/02293021-f309-4d8c-837d-b8802e4ac642" controls muted autoplay playsinline></video>
