@@ -54,7 +54,7 @@ Wordt getoond in cadeau.liquid
 <br>
 <br>
 
-**Loop cadeau producten** 
+**Loop cadeau producten** <br>
 In de index.liquid
 Alle cadeaus worden geladen en er wordt een register/log in kaartje erin gezet door een forloop die het kaartje op de 2de plek in de rij van de cadeau loop zet.
 https://github.com/nadiachaja/server-side-rendering-server-side-website/blob/88c9acee52ff7812e44caf25c653fdb11dfb4465/views/index.liquid#L8-L18
@@ -65,7 +65,7 @@ https://github.com/nadiachaja/server-side-rendering-server-side-website/blob/88c
 <br>
 <br>
 
-**Aparte size voor de loop cadeau producten**
+**Aparte size voor de loop cadeau producten** <br>
 Ik heb aparte sizes voor de loops, omdat de styling anders is.
 <br>
 index.liquid heeft de loop een size van large
@@ -78,7 +78,7 @@ CSS <br>
 De class card is de large en de small heb ik apart neergezet.
 https://github.com/nadiachaja/server-side-rendering-server-side-website/blob/88c9acee52ff7812e44caf25c653fdb11dfb4465/public/styles.css#L364-L377
 
-**404 pagina**
+**404 pagina** <br>
 Ik heb een 404 pagina als de pagina niet gevonden is.
 Hier wordt de pagina gemaakt en dat die komt als het niet gevonden wordt. 
 https://github.com/nadiachaja/server-side-rendering-server-side-website/blob/88c9acee52ff7812e44caf25c653fdb11dfb4465/server.js#L76-L78
