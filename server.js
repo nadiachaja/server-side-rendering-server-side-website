@@ -70,5 +70,5 @@ app.listen(app.get('port'), function () {
 
 
 app.use((req, res, next) => {
-  res.status(404).send("Sorry kan de pagina niet vinden")
+  res.status(404).render("404.liquid")
 })

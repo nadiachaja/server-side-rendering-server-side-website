@@ -511,6 +511,18 @@ legend {
     width: 100vw; 
     min-height: 100vh; 
     overflow: hidden; 
+
+    @media screen and (min-width:1000px){
+        display:grid;
+        grid-template-columns: 50% 1fr max-content;
+        grid-template-rows:  max-content max-content max-content 1fr;
+        grid-template-areas: 
+            "back  .     ."
+            "image titel knop"
+            "image extra  extra"
+            "image info  info";
+
+    }
 }
 
 .go-back{
@@ -521,6 +533,8 @@ legend {
     color: var(--text-general);
     text-decoration: none;
     font-size: var(--xs-paragraph);
+
+    grid-area:back;
 }
 
 .titel-product{
@@ -532,6 +546,8 @@ legend {
     @media screen and (min-width:700px){
         font-size: var( --xs-heading);
     }
+
+    grid-area:titel;
 }
 
 .wrapper-extra-product-info{
@@ -539,6 +555,8 @@ legend {
     gap: .5em;
     margin: 1em;
     width: 100%;
+
+    grid-area:extra;
 }
 
 .spotters-item-img{
@@ -564,6 +582,8 @@ legend {
 .item-product-img{
     width: 100%;
     height: auto; 
+
+    grid-area:image;
 }
 
 .to-favourite-btn{
@@ -582,6 +602,8 @@ legend {
     margin-right: 2em;
     border:none;
     box-shadow: var(--box-shadow-s);
+
+    grid-area:knop;
 }
 
 .divider {
@@ -596,6 +618,8 @@ legend {
     font-size: var(--s-paragraph);
     line-height: var(--line-height-m);
     font-weight: var(--font-weight-normal);
+
+    grid-area:info;
 }
 
 .product-description{
@@ -715,6 +739,8 @@ legend {
     box-shadow: var(--box-shadow-l);
 }
 
+
+
 .to-the-shop{
     color: var(--text-general);
     text-decoration: none;
@@ -738,6 +764,7 @@ legend {
 .shop-name{
     display: flex;
     justify-content: center;
+    text-align: center;
     position: relative;
     bottom: 3em;
     font-size: var(--xs-detail-heading);
@@ -760,7 +787,7 @@ legend {
     justify-content: center;
     gap: 1em;
     position: relative;
-    bottom: 1em;
+    bottom: 2em;
 }
 
 .product-sidebar{
@@ -784,7 +811,6 @@ legend {
 .wrapper-shop{
     width: 350px;
     overflow-x: scroll;
-    white-space: nowrap;
     display: flex;
     padding-bottom: 2em;
 
